@@ -1,5 +1,5 @@
 # Neovim configuration
 
-## Instructions
+## Usage
 
-Configuration provided in Lua. Place `init.lua` and content in directory `lua` inside `~/.config/nvim` directory.
+Make sure to place `init.lua` and directory `lua` inside your `~/.config` directory. Configuration provided in Lua.
