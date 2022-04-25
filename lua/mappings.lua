@@ -2,8 +2,6 @@
 -- MAPPINGS
 --
 
--- remove highlights
-vim.keymap.set("n", "<C-m>", ":noh<cr>")
 -- buffers
 vim.keymap.set("n", "<C-n>", ":bn<cr>")
 vim.keymap.set("n", "<C-p>", ":bp<cr>")
