@@ -44,11 +44,21 @@ packer.init {
 
 -- Install your plugins here
 return packer.startup(function(use)
+    -- Packer can manage itself
+    use 'wbthomason/packer.nvim'
     use "morhetz/gruvbox"
     use "vim-airline/vim-airline"
     use "vim-airline/vim-airline-themes"
     use "junegunn/fzf"
     use "junegunn/fzf.vim"
+    -- LSP
+    use "neovim/nvim-lspconfig"
+    use "williamboman/nvim-lsp-installer"
+    use "hrsh7th/cmp-nvim-lsp"
+    use "hrsh7th/cmp-buffer"
+    use "hrsh7th/nvim-cmp"
+    use "hrsh7th/cmp-vsnip"
+    use "hrsh7th/vim-vsnip"
     use {
         "nvim-treesitter/nvim-treesitter",
         run = ":TSUpdate",
