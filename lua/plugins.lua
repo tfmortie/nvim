@@ -46,11 +46,18 @@ packer.init {
 return packer.startup(function(use)
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
+    -- colorschemes
     use "morhetz/gruvbox"
-    use "vim-airline/vim-airline"
-    use "vim-airline/vim-airline-themes"
+    use {
+        "kaicataldo/material.vim",
+        branch = "main"
+    }
     use "junegunn/fzf"
     use "junegunn/fzf.vim"
+    use { 
+        "nvim-lualine/lualine.nvim", 
+        requires = { "kyazdani42/nvim-web-devicons", opt = true }
+    }
     -- LSP
     use "neovim/nvim-lspconfig"
     use "williamboman/nvim-lsp-installer"

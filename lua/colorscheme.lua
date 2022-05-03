@@ -2,18 +2,61 @@
 -- COLORSCHEME SETTINGS
 --
 
-vim.g["airline#extensions#tabline#enabled"] = 1 -- show tabs/buffers on top
-vim.g["airline_theme"] = "gruvbox" -- theme for airline
-
 -- set vars
 local set = vim.opt
 
-set.background = "dark"
 set.termguicolors = true
 
--- some commands that require vimscript 
 vim.cmd [[
-    colorscheme gruvbox
-    hi Normal guibg=NONE ctermbg=NONE
-    let g:airline_section_z = airline#section#create(['%3p%%', 'linenr', 'maxlinenr'])
+    colorscheme material
 ]]
+
+-- set background transparant
+vim.api.nvim_create_user_command(
+    "BackgroundTransparant",
+    "hi Normal guibg=NONE ctermbg=NONE",
+    {}
+)
+
+-- mappings for setting different colorschemes
+vim.api.nvim_create_user_command(
+    "ThemeGruvbox",
+    "colorscheme gruvbox",
+    {}
+)
+
+vim.api.nvim_create_user_command(
+    "ThemeGruvboxWhite",
+    "colorscheme gruvbox | set background=light",
+    {}
+)
+
+vim.api.nvim_create_user_command(
+    "ThemeMaterial",
+    "let g:material_theme_style='default' | colorscheme material",
+    {}
+)
+
+vim.api.nvim_create_user_command(
+    "ThemeMaterialPalenight",
+    "let g:material_theme_style='palenight' | colorscheme material",
+    {}
+)
+
+vim.api.nvim_create_user_command(
+    "ThemeMaterialOcean",
+    "let g:material_theme_style='ocean' | colorscheme material",
+    {}
+)
+
+vim.api.nvim_create_user_command(
+    "ThemeMaterialLighter",
+    "let g:material_theme_style='lighter' | colorscheme material",
+    {}
+)
+
+vim.api.nvim_create_user_command(
+    "ThemeMaterialDarker",
+    "let g:material_theme_style='darker' | colorscheme material",
+    {}
+)
