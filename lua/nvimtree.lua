@@ -117,4 +117,4 @@ vim.g.nvim_tree_show_icons = {
   folder_arrows = 0,
 }
 -- keybindings
-vim.keymap.set("n", "<space>n", ":NvimTreeToggle<cr>")
+vim.keymap.set("n", "<space>t", ":NvimTreeToggle<cr>")
