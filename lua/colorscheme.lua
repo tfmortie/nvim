@@ -8,8 +8,7 @@ local set = vim.opt
 set.termguicolors = true
 
 vim.cmd [[
-    let g:material_theme_style='palenight'
-    colorscheme material
+    colorscheme gruvbox
 ]]
 
 -- set background transparant
