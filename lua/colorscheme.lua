@@ -9,6 +9,7 @@ set.termguicolors = true
 
 vim.cmd [[
     colorscheme gruvbox
+    hi Normal guibg=NONE ctermbg=NONE
 ]]
 
 -- set background transparant
