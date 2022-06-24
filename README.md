@@ -1,9 +1,8 @@
 # Neovim configuration
 
-## Usage
+## Installation
 
-Make sure to place `init.lua` and directory `lua` inside your `~/.config/nvim` directory. Configuration provided in Lua.
+1) Move `init.lua` and directory `lua` inside your `~/.config/nvim` directory.
+2) Run `nvim` and install plugins with command `:PackerInstall`
 
-## TODO
-
-- Fix issue syntax highlighting treesitter when changing colorscheme
+**Important**: in order to use the plugin `junegunn/fzf.vim`, [fzf](https://github.com/junegunn/fzf) must be installed. Alternatively, one can use [`nvim-telescope/telescope.nvim`](https://github.com/nvim-telescope/telescope.nvim).
