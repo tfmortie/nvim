@@ -42,6 +42,12 @@ require'nvim-tree'.setup {
     icons = {
       webdev_colors = false,
       git_placement = "before",
+      show = {
+          git = false,
+          file = false,
+          folder = false,
+          folder_arrow = false
+      }
     },
   },
   hijack_directories = {
@@ -107,14 +113,7 @@ require'nvim-tree'.setup {
       git = false,
       profile = false,
     },
-  },
-}
--- make sure to disable icons
-vim.g.nvim_tree_show_icons = {
-  git = 0,
-  folders = 0,
-  files = 0,
-  folder_arrows = 0,
+  }
 }
 -- keybindings
 vim.keymap.set("n", "<space>t", ":NvimTreeToggle<cr>")
