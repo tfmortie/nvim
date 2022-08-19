@@ -10,12 +10,12 @@ vim.keymap.set("n", ",cp", "^v$hyistd::cout << '<Esc>pa=' << <Esc><S-a> << std::
 -- commands
 vim.api.nvim_create_user_command(
     "CompileBeamer",
-    '!pdflatex --shell-escape "%";pdflatex --shell-escape "%";open %:t:r.pdf;rm *.aux *.log *.nav *.out *.snm *.toc',
+    '!pdflatex --shell-escape %:p;pdflatex --shell-escape %:p;open %:p:r.pdf;rm *.aux *.log *.nav *.out *.snm *.toc',
     {}
 ) -- for beamer compilation
 vim.api.nvim_create_user_command(
     "CompileLatex",
-    "!pdflatex %:t:r.tex;bibtex %:t:r.aux;pdflatex %:t:r.tex;pdflatex %:t:r.tex;open %:t:r.pdf;rm *.blg *.bbl *.aux *.log",
+    "!pdflatex %:p;bibtex %:p:r.aux;pdflatex %:p;pdflatex %:p;open %:p:r.pdf;rm *.blg *.bbl *.aux *.log",
     {}
 ) -- for latex compilation
 vim.api.nvim_create_user_command(
