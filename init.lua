@@ -1,6 +1,5 @@
 require "settings"
 require "plugins"
-require "treesitter"
 require "colorscheme"
 require "statusline"
 require "snippets"

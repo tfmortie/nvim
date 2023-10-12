@@ -46,11 +46,6 @@ packer.init {
 return packer.startup(function(use)
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
-    -- File explorer
-    use {
-      "nvim-telescope/telescope-file-browser.nvim",
-      requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
-    }
     -- Color schemes
     use "morhetz/gruvbox"
     use {
@@ -94,15 +89,6 @@ use {
     -- LSP
     use "neovim/nvim-lspconfig"
     use "williamboman/mason.nvim"
-    use "hrsh7th/cmp-nvim-lsp"
-    use "hrsh7th/cmp-buffer"
-    use "hrsh7th/nvim-cmp"
-    use "hrsh7th/cmp-vsnip"
-    use "hrsh7th/vim-vsnip"
-    use {
-        "nvim-treesitter/nvim-treesitter",
-        run = ":TSUpdate",
-    }
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
     if PACKER_BOOTSTRAP then
