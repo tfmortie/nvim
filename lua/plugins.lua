@@ -48,10 +48,10 @@ return packer.startup(function(use)
     use 'wbthomason/packer.nvim'
     -- File explorer
     use {
-        "kyazdani42/nvim-tree.lua",
-        tag = "nightly"
+      "nvim-telescope/telescope-file-browser.nvim",
+      requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
     }
-    -- colorschemes
+    -- Color schemes
     use "morhetz/gruvbox"
     use {
         "kaicataldo/material.vim",
@@ -93,7 +93,7 @@ use {
 }
     -- LSP
     use "neovim/nvim-lspconfig"
-    use "williamboman/nvim-lsp-installer"
+    use "williamboman/mason.nvim"
     use "hrsh7th/cmp-nvim-lsp"
     use "hrsh7th/cmp-buffer"
     use "hrsh7th/nvim-cmp"
