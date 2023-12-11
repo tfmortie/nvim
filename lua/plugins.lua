@@ -48,6 +48,7 @@ return packer.startup(function(use)
     use 'wbthomason/packer.nvim'
     -- Color schemes
     use "morhetz/gruvbox"
+    use { "catppuccin/nvim", as = "catppuccin" }
     use {
         "kaicataldo/material.vim",
         branch = "main"

@@ -8,7 +8,7 @@ local set = vim.opt
 set.termguicolors = true
 
 vim.cmd [[
-    colorscheme gruvbox
+    colorscheme catppuccin-macchiato
     hi Normal guibg=NONE ctermbg=NONE
 ]]
 
@@ -59,5 +59,17 @@ vim.api.nvim_create_user_command(
 vim.api.nvim_create_user_command(
     "ThemeMaterialDarker",
     "let g:material_theme_style='darker' | colorscheme material",
+    {}
+)
+
+vim.api.nvim_create_user_command(
+    "ThemeCatppuccinLight",
+    "colorscheme catppuccin-latte",
+    {}
+)
+
+vim.api.nvim_create_user_command(
+    "ThemeCatppuccinDarker",
+    "colorscheme catppuccin-macchiato",
     {}
 )
