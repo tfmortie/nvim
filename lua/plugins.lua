@@ -44,6 +44,11 @@ packer.init {
 
 -- Install your plugins here
 return packer.startup(function(use)
+    -- Treesitter
+    use {
+        'nvim-treesitter/nvim-treesitter',
+        run = ':TSUpdate'
+    }
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
     -- Color schemes
