@@ -1,9 +1,2 @@
-require "settings"
-require "plugins"
-require "colorscheme"
-require "statusline"
-require "snippets"
-require "mappings"
-require "fzf"
-require "lsp"
-require "treesitter"
+-- bootstrap lazy.nvim, LazyVim and your plugins
+require("config.lazy")
