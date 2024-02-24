@@ -1,8 +1,5 @@
-# Neovim configuration
+# LazyVim configuration
 
 ## Installation
 
-1) Move `init.lua` and directory `lua` inside your `~/.config/nvim` directory.
-2) Run `nvim` and install plugins with command `:PackerInstall`
-
-**Important**: in order to use the plugin [`junegunn/fzf.vim`](https://github.com/junegunn/fzf.vim), [`junegunn/fzf`](https://github.com/junegunn/fzf) must be installed. Alternatively, one can use [`nvim-telescope/telescope.nvim`](https://github.com/nvim-telescope/telescope.nvim).
+Move content of root folder to your local `~/.config/nvim` folder. See [LazyVim](https://www.lazyvim.org) documentation for more information.
